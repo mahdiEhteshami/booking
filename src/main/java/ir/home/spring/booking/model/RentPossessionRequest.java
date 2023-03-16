@@ -12,6 +12,7 @@ import javax.persistence.*;
 public class RentPossessionRequest extends PossessionRequest {
     @EmbeddedId
     private PossessionRequest possessionRequest;
+    @Enumerated
     private RentType rentType;
     private float deposit;
     private float rentFee;
