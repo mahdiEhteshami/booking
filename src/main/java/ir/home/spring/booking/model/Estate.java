@@ -10,7 +10,8 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "estate_type")
 public abstract class Estate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

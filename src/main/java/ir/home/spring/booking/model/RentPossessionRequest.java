@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Entity
 @DiscriminatorValue(value = "RENT")
 public class RentPossessionRequest extends PossessionRequest {
-    @EmbeddedId
-    private PossessionRequest possessionRequest;
+//    @EmbeddedId
+//    private PossessionRequest possessionRequest;
     @Enumerated
     private RentType rentType;
     private float deposit;

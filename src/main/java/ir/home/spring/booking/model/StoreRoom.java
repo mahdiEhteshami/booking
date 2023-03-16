@@ -1,8 +1,10 @@
 package ir.home.spring.booking.model;
 
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
-@PrimaryKeyJoinColumn(name = "storeRoomId")
+@Entity
+@DiscriminatorValue(value = "store_room")
 public class StoreRoom extends Estate {
     private int floorNumber;
 }

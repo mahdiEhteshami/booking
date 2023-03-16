@@ -12,8 +12,8 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue(value = "SALE")
 public class SalePossessionRequest extends PossessionRequest {
-    @EmbeddedId
-    private PossessionRequest possessionRequest;
+//    @EmbeddedId
+//    private PossessionRequest possessionRequest;
     private float cost;
     private float valuePerMeter;
 }

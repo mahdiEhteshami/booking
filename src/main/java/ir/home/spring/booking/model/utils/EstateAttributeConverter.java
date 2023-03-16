@@ -15,6 +15,6 @@ public class EstateAttributeConverter implements AttributeConverter<List<EstateA
     }
 
     public List<EstateAttribute> convertToEntityAttribute(String s) {
-        return Arrays.stream(s.split(",")).map(EstateAttribute::valueOf).toList();
+        return Arrays.stream(s.split(",")).map(EstateAttribute::valueOf).collect(Collectors.toList());
     }
 }

@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(columnDefinition = "request_type")
+@DiscriminatorColumn(name = "request_type")
 public abstract class PossessionRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
