@@ -23,6 +23,8 @@ public abstract class Estate {
     @Convert(converter = EstateAttributeConverter.class)
     private List<EstateAttribute> estateAttributes;
     private float meterage;
+    @OneToMany(mappedBy = "estate")
+    private List<ImageFile> images;
     @Version
     private int version;
 }
